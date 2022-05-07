@@ -1,0 +1,25 @@
+
+Call:
+lm(formula = Interest ~ ScreenTime + Extraversion + SES + Sex, 
+    data = GamingAptitude)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-11.815  -2.163   0.078   2.258  10.132 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   0.12961    0.52669   0.246   0.8057    
+ScreenTime    0.22179    0.11027   2.011   0.0446 *  
+Extraversion -0.21741    0.02072 -10.494  < 2e-16 ***
+SES2          1.77279    0.29435   6.023 2.62e-09 ***
+SES3          3.60459    0.31255  11.533  < 2e-16 ***
+SES4          5.97720    0.32073  18.636  < 2e-16 ***
+Sex1         -2.59339    0.31146  -8.327 3.63e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3.111 on 793 degrees of freedom
+Multiple R-squared:  0.4278,	Adjusted R-squared:  0.4235 
+F-statistic: 98.83 on 6 and 793 DF,  p-value: < 2.2e-16
+
