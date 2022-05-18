@@ -1,0 +1,2 @@
+     Test        H   p value MVN
+1 Royston 14.97068 0.1206854 YES

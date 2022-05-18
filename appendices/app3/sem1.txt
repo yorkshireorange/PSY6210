@@ -1,0 +1,330 @@
+lavaan 0.6-11 ended normally after 57 iterations
+
+  Estimator                                         ML
+  Optimization method                           NLMINB
+  Number of model parameters                        32
+                                                      
+  Number of observations                           800
+                                                      
+Model Test User Model:
+                                                      
+  Test statistic                                29.194
+  Degrees of freedom                                31
+  P-value (Chi-square)                           0.559
+
+Model Test Baseline Model:
+
+  Test statistic                              2297.008
+  Degrees of freedom                                45
+  P-value                                        0.000
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    1.000
+  Tucker-Lewis Index (TLI)                       1.001
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)             -14052.558
+  Loglikelihood unrestricted model (H1)     -14037.961
+                                                      
+  Akaike (AIC)                               28169.115
+  Bayesian (BIC)                             28319.023
+  Sample-size adjusted Bayesian (BIC)        28217.405
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.000
+  90 Percent confidence interval - lower         0.000
+  90 Percent confidence interval - upper         0.024
+  P-value RMSEA <= 0.05                          1.000
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.022
+
+Parameter Estimates:
+
+  Standard errors                             Standard
+  Information                                 Expected
+  Information saturated (h1) model          Structured
+
+Latent Variables:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+  Metacog =~                                                            
+    Strategy          0.982    0.052   18.940    0.000    0.982    0.703
+    Task              0.564    0.042   13.302    0.000    0.564    0.498
+    Character         1.521    0.068   22.358    0.000    1.521    0.837
+    GlobalMovement    0.589    0.053   11.063    0.000    0.589    0.421
+  WoMem =~                                                              
+    TaskSwitch        0.880    0.081   10.855    0.000    0.880    0.628
+    StroopTask        0.329    0.047    7.021    0.000    0.329    0.312
+    UpdatingTask      0.862    0.077   11.158    0.000    0.862    0.675
+
+Regressions:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+  ExploreExploit ~                                                      
+    BreakTime (a1)    0.884    0.021   41.850    0.000    0.884    0.829
+    Metacog   (a2)   -0.016    0.159   -0.101    0.919   -0.016   -0.002
+  EloScore ~                                                            
+    BreakTime (c1)    0.395    0.064    6.213    0.000    0.395    0.289
+    Metacog   (c2)   -1.270    0.280   -4.529    0.000   -1.270   -0.138
+    WoMem             0.957    0.316    3.028    0.002    0.957    0.104
+    ExplrExpl  (b)    0.516    0.060    8.664    0.000    0.516    0.404
+
+Covariances:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+  Metacog ~~                                                            
+    WoMem             0.200    0.049    4.039    0.000    0.200    0.200
+
+Intercepts:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+   .Strategy          0.072    0.049    1.456    0.145    0.072    0.051
+   .Task             -0.083    0.040   -2.077    0.038   -0.083   -0.073
+   .Character        -0.032    0.064   -0.494    0.621   -0.032   -0.017
+   .GlobalMovement    0.052    0.050    1.048    0.295    0.052    0.037
+   .TaskSwitch       -0.009    0.050   -0.190    0.849   -0.009   -0.007
+   .StroopTask       -0.035    0.037   -0.938    0.348   -0.035   -0.033
+   .UpdatingTask      0.049    0.045    1.089    0.276    0.049    0.038
+   .ExploreExploit    6.453    0.454   14.216    0.000    6.453    0.900
+   .EloScore         99.421    0.857  116.016    0.000   99.421   10.831
+    Metacog           0.000                               0.000    0.000
+    WoMem             0.000                               0.000    0.000
+
+Variances:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+    Metacog           1.000                               1.000    1.000
+    WoMem             1.000                               1.000    1.000
+   .Strategy          0.988    0.076   13.054    0.000    0.988    0.506
+   .Task              0.961    0.053   18.123    0.000    0.961    0.752
+   .Character         0.990    0.143    6.927    0.000    0.990    0.300
+   .GlobalMovement    1.614    0.086   18.823    0.000    1.614    0.823
+   .TaskSwitch        1.190    0.133    8.916    0.000    1.190    0.606
+   .StroopTask        1.002    0.054   18.640    0.000    1.002    0.902
+   .UpdatingTask      0.885    0.122    7.224    0.000    0.885    0.544
+   .ExploreExploit   16.131    0.807   20.000    0.000   16.131    0.314
+   .EloScore         45.127    2.306   19.567    0.000   45.127    0.536
+
+Defined Parameters:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+    ind1              0.456    0.054    8.485    0.000    0.456    0.334
+    ind2             -0.008    0.082   -0.101    0.919   -0.008   -0.001
+    tot1              0.851    0.037   22.881    0.000    0.851    0.624
+    tot2             -1.278    0.292   -4.374    0.000   -1.278   -0.139
+
+Modification Indices:
+
+              lhs op            rhs    mi    epc sepc.lv sepc.all sepc.nox
+43        Metacog =~     TaskSwitch 0.143  0.024   0.024    0.017    0.017
+44        Metacog =~     StroopTask 2.767  0.071   0.071    0.067    0.067
+45        Metacog =~   UpdatingTask 1.662 -0.079  -0.079   -0.062   -0.062
+46          WoMem =~       Strategy 0.720 -0.046  -0.046   -0.033   -0.033
+47          WoMem =~           Task 0.081  0.014   0.014    0.012    0.012
+48          WoMem =~      Character 1.478  0.091   0.091    0.050    0.050
+49          WoMem =~ GlobalMovement 1.699 -0.079  -0.079   -0.057   -0.057
+50       Strategy ~~           Task 5.219  0.128   0.128    0.131    0.131
+51       Strategy ~~      Character 0.047  0.041   0.041    0.042    0.042
+52       Strategy ~~ GlobalMovement 6.312 -0.156  -0.156   -0.124   -0.124
+53       Strategy ~~     TaskSwitch 0.343 -0.029  -0.029   -0.027   -0.027
+54       Strategy ~~     StroopTask 1.708  0.053   0.053    0.053    0.053
+55       Strategy ~~   UpdatingTask 0.631 -0.036  -0.036   -0.039   -0.039
+56       Strategy ~~ ExploreExploit 0.169  0.067   0.067    0.017    0.017
+57       Strategy ~~       EloScore 0.274 -0.147  -0.147   -0.022   -0.022
+58           Task ~~      Character 6.237 -0.218  -0.218   -0.224   -0.224
+59           Task ~~ GlobalMovement 0.102  0.016   0.016    0.012    0.012
+60           Task ~~     TaskSwitch 0.032 -0.008  -0.008   -0.008   -0.008
+61           Task ~~     StroopTask 2.645  0.060   0.060    0.061    0.061
+62           Task ~~   UpdatingTask 0.086 -0.012  -0.012   -0.013   -0.013
+63           Task ~~ ExploreExploit 0.002 -0.006  -0.006   -0.002   -0.002
+64           Task ~~       EloScore 0.110  0.082   0.082    0.012    0.012
+65      Character ~~ GlobalMovement 4.893  0.205   0.205    0.162    0.162
+66      Character ~~     TaskSwitch 1.107  0.068   0.068    0.062    0.062
+67      Character ~~     StroopTask 0.287 -0.027  -0.027   -0.027   -0.027
+68      Character ~~   UpdatingTask 0.083  0.017   0.017    0.018    0.018
+69      Character ~~ ExploreExploit 0.640 -0.179  -0.179   -0.045   -0.045
+70      Character ~~       EloScore 0.598  0.300   0.300    0.045    0.045
+71 GlobalMovement ~~     TaskSwitch 0.326 -0.033  -0.033   -0.024   -0.024
+72 GlobalMovement ~~     StroopTask 0.285 -0.025  -0.025   -0.020   -0.020
+73 GlobalMovement ~~   UpdatingTask 0.170 -0.022  -0.022   -0.018   -0.018
+74 GlobalMovement ~~ ExploreExploit 0.711  0.157   0.157    0.031    0.031
+75 GlobalMovement ~~       EloScore 1.078 -0.325  -0.325   -0.038   -0.038
+76     TaskSwitch ~~     StroopTask 0.210 -0.040  -0.040   -0.036   -0.036
+77     TaskSwitch ~~   UpdatingTask 0.270  0.199   0.199    0.194    0.194
+78     TaskSwitch ~~ ExploreExploit 0.011 -0.019  -0.019   -0.004   -0.004
+79     TaskSwitch ~~       EloScore 0.062 -0.089  -0.089   -0.012   -0.012
+80     StroopTask ~~   UpdatingTask 0.023  0.013   0.013    0.014    0.014
+81     StroopTask ~~ ExploreExploit 1.392 -0.171  -0.171   -0.043   -0.043
+82     StroopTask ~~       EloScore 1.684 -0.323  -0.323   -0.048   -0.048
+83   UpdatingTask ~~ ExploreExploit 1.040  0.165   0.165    0.044    0.044
+84   UpdatingTask ~~       EloScore 0.868  0.321   0.321    0.051    0.051
+86 ExploreExploit  ~       EloScore 0.160  0.078   0.078    0.100    0.100
+87 ExploreExploit  ~          WoMem 0.160  0.075   0.075    0.010    0.010
+88      BreakTime  ~ ExploreExploit 0.042 -3.399  -3.399   -3.626   -3.626
+89      BreakTime  ~       EloScore 0.000 -0.003  -0.003   -0.003   -0.003
+90      BreakTime  ~        Metacog 0.042  0.055   0.055    0.008    0.008
+91      BreakTime  ~          WoMem 0.085  0.088   0.088    0.013    0.013
+92        Metacog  ~ ExploreExploit 0.012  0.001   0.001    0.005    0.005
+93        Metacog  ~       EloScore 0.018  0.001   0.001    0.008    0.008
+94        Metacog  ~      BreakTime 0.025  0.001   0.001    0.006    0.001
+96          WoMem  ~ ExploreExploit 0.188  0.003   0.003    0.019    0.019
+97          WoMem  ~       EloScore 0.140  0.003   0.003    0.025    0.025
+98          WoMem  ~      BreakTime 0.064  0.002   0.002    0.011    0.002
+$FIT
+             npar              fmin             chisq                df 
+           32.000             0.018            29.194            31.000 
+           pvalue    baseline.chisq       baseline.df   baseline.pvalue 
+            0.559          2297.008            45.000             0.000 
+              cfi               tli              logl unrestricted.logl 
+            1.000             1.001        -14052.558        -14037.961 
+              aic               bic            ntotal              bic2 
+        28169.115         28319.023           800.000         28217.405 
+            rmsea    rmsea.ci.lower    rmsea.ci.upper      rmsea.pvalue 
+            0.000             0.000             0.024             1.000 
+             srmr 
+            0.022 
+
+$PE
+              lhs op            rhs label exo          est         se           z
+1         Metacog =~       Strategy         0  0.982437802 0.05187014  18.9403332
+2         Metacog =~           Task         0  0.563615051 0.04237214  13.3015485
+3         Metacog =~      Character         0  1.520845776 0.06802296  22.3578306
+4         Metacog =~ GlobalMovement         0  0.589412823 0.05327950  11.0626568
+5           WoMem =~     TaskSwitch         0  0.880199558 0.08108365  10.8554501
+6           WoMem =~     StroopTask         0  0.329058714 0.04686815   7.0209448
+7           WoMem =~   UpdatingTask         0  0.861665151 0.07722525  11.1578169
+8  ExploreExploit  ~      BreakTime    a1   0  0.883890232 0.02112026  41.8503485
+9  ExploreExploit  ~        Metacog    a2   0 -0.016137878 0.15923575  -0.1013458
+10       EloScore  ~      BreakTime    c1   0  0.394952724 0.06356733   6.2131399
+11       EloScore  ~        Metacog    c2   0 -1.269651592 0.28034962  -4.5288151
+12       EloScore  ~          WoMem         0  0.957107076 0.31605208   3.0283207
+13       EloScore  ~ ExploreExploit     b   0  0.516410746 0.05960097   8.6644694
+14        Metacog ~~        Metacog         0  1.000000000 0.00000000          NA
+15          WoMem ~~          WoMem         0  1.000000000 0.00000000          NA
+16       Strategy ~~       Strategy         0  0.988176605 0.07570189  13.0535256
+17           Task ~~           Task         0  0.960895768 0.05302025  18.1231828
+18      Character ~~      Character         0  0.990230408 0.14294942   6.9271381
+19 GlobalMovement ~~ GlobalMovement         0  1.613816528 0.08573663  18.8229530
+20     TaskSwitch ~~     TaskSwitch         0  1.189628834 0.13343051   8.9157179
+21     StroopTask ~~     StroopTask         0  1.001878764 0.05375011  18.6395659
+22   UpdatingTask ~~   UpdatingTask         0  0.884973444 0.12249897   7.2243337
+23 ExploreExploit ~~ ExploreExploit         0 16.130967486 0.80655173  19.9999169
+24       EloScore ~~       EloScore         0 45.126842067 2.30632890  19.5665250
+25        Metacog ~~          WoMem         0  0.199675185 0.04943428   4.0392047
+26      BreakTime ~~      BreakTime         1 45.203634340 0.00000000          NA
+27       Strategy ~1                        0  0.071947749 0.04941357   1.4560322
+28           Task ~1                        0 -0.083017070 0.03997746  -2.0765970
+29      Character ~1                        0 -0.031755318 0.06425732  -0.4941899
+30 GlobalMovement ~1                        0  0.051883438 0.04951293   1.0478766
+31     TaskSwitch ~1                        0 -0.009411366 0.04955275  -0.1899262
+32     StroopTask ~1                        0 -0.034935664 0.03725182  -0.9378244
+33   UpdatingTask ~1                        0  0.049114724 0.04510322   1.0889405
+34 ExploreExploit ~1                        0  6.453445852 0.45396591  14.2157059
+35       EloScore ~1                        0 99.421471146 0.85696368 116.0159681
+36      BreakTime ~1                        1 20.415733116 0.00000000          NA
+37        Metacog ~1                        0  0.000000000 0.00000000          NA
+38          WoMem ~1                        0  0.000000000 0.00000000          NA
+39           ind1 :=           a1*b  ind1   0  0.456450415 0.05379790   8.4845395
+40           ind2 :=           a2*b  ind2   0 -0.008333773 0.08219771  -0.1013869
+41           tot1 :=      c1+(a1*b)  tot1   0  0.851403138 0.03721045  22.8807526
+42           tot2 :=      c2+(a2*b)  tot2   0 -1.277985365 0.29218621  -4.3738730
+         pvalue       std.lv       std.all       std.nox
+1  0.000000e+00  0.982437802  0.7029328644  0.7029328644
+2  0.000000e+00  0.563615051  0.4984509376  0.4984509376
+3  0.000000e+00  1.520845776  0.8367921376  0.8367921376
+4  0.000000e+00  0.589412823  0.4208777626  0.4208777626
+5  0.000000e+00  0.880199558  0.6280126383  0.6280126383
+6  2.203793e-12  0.329058714  0.3123064268  0.3123064268
+7  0.000000e+00  0.861665151  0.6754387910  0.6754387910
+8  0.000000e+00  0.883890232  0.8285229287  0.1232303991
+9  9.192759e-01 -0.016137878 -0.0022499141 -0.0022499141
+10 5.193617e-10  0.394952724  0.2892868871  0.0430270996
+11 5.931538e-06 -1.269651592 -0.1383188979 -0.1383188979
+12 2.459169e-03  0.957107076  0.1042695467  0.1042695467
+13 0.000000e+00  0.516410746  0.4035271028  0.4035271028
+14           NA  1.000000000  1.0000000000  1.0000000000
+15           NA  1.000000000  1.0000000000  1.0000000000
+16 0.000000e+00  0.988176605  0.5058853881  0.5058853881
+17 0.000000e+00  0.960895768  0.7515466628  0.7515466628
+18 4.294343e-12  0.990230408  0.2997789185  0.2997789185
+19 0.000000e+00  1.613816528  0.8228619089  0.8228619089
+20 0.000000e+00  1.189628834  0.6056001261  0.6056001261
+21 0.000000e+00  1.001878764  0.9024646958  0.9024646958
+22 5.035972e-13  0.884973444  0.5437824397  0.5437824397
+23 0.000000e+00 16.130967486  0.3135446946  0.3135446946
+24 0.000000e+00 45.126842067  0.5355855610  0.5355855610
+25 5.363274e-05  0.199675185  0.1996751853  0.1996751853
+26           NA 45.203634340  1.0000000000 45.2036343403
+27 1.453837e-01  0.071947749  0.0514785130  0.0514785130
+28 3.783877e-02 -0.083017070 -0.0734187921 -0.0734187921
+29 6.211721e-01 -0.031755318 -0.0174722520 -0.0174722520
+30 2.946955e-01  0.051883438  0.0370480326  0.0370480326
+31 8.493670e-01 -0.009411366 -0.0067149057 -0.0067149057
+32 3.483347e-01 -0.034935664 -0.0331570994 -0.0331570994
+33 2.761801e-01  0.049114724  0.0384998621  0.0384998621
+34 0.000000e+00  6.453445852  0.8997279061  0.8997279061
+35 0.000000e+00 99.421471146 10.8312141779 10.8312141779
+36           NA 20.415733116  3.0365350831 20.4157331158
+37           NA  0.000000000  0.0000000000  0.0000000000
+38           NA  0.000000000  0.0000000000  0.0000000000
+39 0.000000e+00  0.456450415  0.3343314570  0.0497268059
+40 9.192433e-01 -0.008333773 -0.0009079013 -0.0009079013
+41 0.000000e+00  0.851403138  0.6236183441  0.0927539055
+42 1.220614e-05 -1.277985365 -0.1392267993 -0.1392267993
+
+$MI
+              lhs op            rhs    mi    epc sepc.lv sepc.all sepc.nox
+43        Metacog =~     TaskSwitch 0.143  0.024   0.024    0.017    0.017
+44        Metacog =~     StroopTask 2.767  0.071   0.071    0.067    0.067
+45        Metacog =~   UpdatingTask 1.662 -0.079  -0.079   -0.062   -0.062
+46          WoMem =~       Strategy 0.720 -0.046  -0.046   -0.033   -0.033
+47          WoMem =~           Task 0.081  0.014   0.014    0.012    0.012
+48          WoMem =~      Character 1.478  0.091   0.091    0.050    0.050
+49          WoMem =~ GlobalMovement 1.699 -0.079  -0.079   -0.057   -0.057
+50       Strategy ~~           Task 5.219  0.128   0.128    0.131    0.131
+51       Strategy ~~      Character 0.047  0.041   0.041    0.042    0.042
+52       Strategy ~~ GlobalMovement 6.312 -0.156  -0.156   -0.124   -0.124
+53       Strategy ~~     TaskSwitch 0.343 -0.029  -0.029   -0.027   -0.027
+54       Strategy ~~     StroopTask 1.708  0.053   0.053    0.053    0.053
+55       Strategy ~~   UpdatingTask 0.631 -0.036  -0.036   -0.039   -0.039
+56       Strategy ~~ ExploreExploit 0.169  0.067   0.067    0.017    0.017
+57       Strategy ~~       EloScore 0.274 -0.147  -0.147   -0.022   -0.022
+58           Task ~~      Character 6.237 -0.218  -0.218   -0.224   -0.224
+59           Task ~~ GlobalMovement 0.102  0.016   0.016    0.012    0.012
+60           Task ~~     TaskSwitch 0.032 -0.008  -0.008   -0.008   -0.008
+61           Task ~~     StroopTask 2.645  0.060   0.060    0.061    0.061
+62           Task ~~   UpdatingTask 0.086 -0.012  -0.012   -0.013   -0.013
+63           Task ~~ ExploreExploit 0.002 -0.006  -0.006   -0.002   -0.002
+64           Task ~~       EloScore 0.110  0.082   0.082    0.012    0.012
+65      Character ~~ GlobalMovement 4.893  0.205   0.205    0.162    0.162
+66      Character ~~     TaskSwitch 1.107  0.068   0.068    0.062    0.062
+67      Character ~~     StroopTask 0.287 -0.027  -0.027   -0.027   -0.027
+68      Character ~~   UpdatingTask 0.083  0.017   0.017    0.018    0.018
+69      Character ~~ ExploreExploit 0.640 -0.179  -0.179   -0.045   -0.045
+70      Character ~~       EloScore 0.598  0.300   0.300    0.045    0.045
+71 GlobalMovement ~~     TaskSwitch 0.326 -0.033  -0.033   -0.024   -0.024
+72 GlobalMovement ~~     StroopTask 0.285 -0.025  -0.025   -0.020   -0.020
+73 GlobalMovement ~~   UpdatingTask 0.170 -0.022  -0.022   -0.018   -0.018
+74 GlobalMovement ~~ ExploreExploit 0.711  0.157   0.157    0.031    0.031
+75 GlobalMovement ~~       EloScore 1.078 -0.325  -0.325   -0.038   -0.038
+76     TaskSwitch ~~     StroopTask 0.210 -0.040  -0.040   -0.036   -0.036
+77     TaskSwitch ~~   UpdatingTask 0.270  0.199   0.199    0.194    0.194
+78     TaskSwitch ~~ ExploreExploit 0.011 -0.019  -0.019   -0.004   -0.004
+79     TaskSwitch ~~       EloScore 0.062 -0.089  -0.089   -0.012   -0.012
+80     StroopTask ~~   UpdatingTask 0.023  0.013   0.013    0.014    0.014
+81     StroopTask ~~ ExploreExploit 1.392 -0.171  -0.171   -0.043   -0.043
+82     StroopTask ~~       EloScore 1.684 -0.323  -0.323   -0.048   -0.048
+83   UpdatingTask ~~ ExploreExploit 1.040  0.165   0.165    0.044    0.044
+84   UpdatingTask ~~       EloScore 0.868  0.321   0.321    0.051    0.051
+86 ExploreExploit  ~       EloScore 0.160  0.078   0.078    0.100    0.100
+87 ExploreExploit  ~          WoMem 0.160  0.075   0.075    0.010    0.010
+88      BreakTime  ~ ExploreExploit 0.042 -3.399  -3.399   -3.626   -3.626
+89      BreakTime  ~       EloScore 0.000 -0.003  -0.003   -0.003   -0.003
+90      BreakTime  ~        Metacog 0.042  0.055   0.055    0.008    0.008
+91      BreakTime  ~          WoMem 0.085  0.088   0.088    0.013    0.013
+92        Metacog  ~ ExploreExploit 0.012  0.001   0.001    0.005    0.005
+93        Metacog  ~       EloScore 0.018  0.001   0.001    0.008    0.008
+94        Metacog  ~      BreakTime 0.025  0.001   0.001    0.006    0.001
+96          WoMem  ~ ExploreExploit 0.188  0.003   0.003    0.019    0.019
+97          WoMem  ~       EloScore 0.140  0.003   0.003    0.025    0.025
+98          WoMem  ~      BreakTime 0.064  0.002   0.002    0.011    0.002
+

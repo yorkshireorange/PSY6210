@@ -1,9 +1,8 @@
 #### SET-UP ####
 
 # packages
-library(tidyverse)
-library(ggplot2)
 library(here)
+library(ggplot2)
 
 # open data
 load(here("data", "psy6210.RData"))
@@ -18,7 +17,7 @@ GamingAptitude$SES <- relevel(GamingAptitude$SES, ref = "1")
 # build glm
 mod1 <- lm(Interest ~ ScreenTime + Extraversion + SES + Sex, data = GamingAptitude)
 summary(mod1)
-sink(here("appendices", "app1", "model1.txt"))
+sink(here("appendices", "app1", "mod1.txt"))
 print(summary(mod1))
 sink()
 
@@ -55,7 +54,7 @@ col1 <- cor(GamingAptitude[,c('ScreenTime', 'Extraversion')], use = "complete.ob
     method = "pearson")
 col1
 
-sink(here("appendices", "app1", "col1.txt"))
+sink(here("appendices", "app1", "mod1_coll.txt"))
 print(col1)
 sink()
 
@@ -72,7 +71,7 @@ data_rev$SES <- relevel(data_rev$SES, ref = "1")
 mod1a <- lm(Interest ~ ScreenTime + Extraversion + SES + Sex, data = data_rev)
 summary(mod1a)
 
-sink(here("appendices", "app1", "model1a.txt"))
+sink(here("appendices", "app1", "mod1a.txt"))
 print(summary(mod1a))
 sink()
 

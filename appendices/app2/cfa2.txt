@@ -1,0 +1,280 @@
+lavaan 0.6-10 ended normally after 25 iterations
+
+  Estimator                                         ML
+  Optimization method                           NLMINB
+  Number of model parameters                        19
+                                                      
+  Number of observations                           800
+                                                      
+Model Test User Model:
+                                              Standard      Robust
+  Test Statistic                               321.632     321.962
+  Degrees of freedom                                26          26
+  P-value (Chi-square)                           0.000       0.000
+  Scaling correction factor                                  0.999
+       Satorra-Bentler correction                                 
+
+Model Test Baseline Model:
+
+  Test statistic                              1380.702    1299.562
+  Degrees of freedom                                36          36
+  P-value                                        0.000       0.000
+  Scaling correction factor                                  1.062
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    0.780       0.766
+  Tucker-Lewis Index (TLI)                       0.696       0.676
+                                                                  
+  Robust Comparative Fit Index (CFI)                         0.780
+  Robust Tucker-Lewis Index (TLI)                            0.695
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)             -11724.766  -11724.766
+  Loglikelihood unrestricted model (H1)     -11563.950  -11563.950
+                                                                  
+  Akaike (AIC)                               23487.531   23487.531
+  Bayesian (BIC)                             23576.539   23576.539
+  Sample-size adjusted Bayesian (BIC)        23516.203   23516.203
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.119       0.119
+  90 Percent confidence interval - lower         0.108       0.108
+  90 Percent confidence interval - upper         0.131       0.131
+  P-value RMSEA <= 0.05                          0.000       0.000
+                                                                  
+  Robust RMSEA                                               0.119
+  90 Percent confidence interval - lower                     0.108
+  90 Percent confidence interval - upper                     0.131
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.114       0.114
+
+Parameter Estimates:
+
+  Standard errors                           Robust.sem
+  Information                                 Expected
+  Information saturated (h1) model          Structured
+
+Latent Variables:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+  Metacog =~                                                            
+    Strategy          0.974    0.048   20.205    0.000    0.974    0.697
+    Task              0.561    0.042   13.227    0.000    0.561    0.496
+    Character         1.487    0.065   22.705    0.000    1.487    0.818
+    GlobalMovement    0.663    0.052   12.719    0.000    0.663    0.473
+    Knowledge         0.770    0.053   14.580    0.000    0.770    0.535
+  WoMem =~                                                              
+    TaskSwitch        0.914    0.086   10.603    0.000    0.914    0.652
+    StroopTask        0.333    0.046    7.250    0.000    0.333    0.316
+    UpdatingTask      0.808    0.077   10.490    0.000    0.808    0.633
+    TimeSpent         0.169    0.053    3.194    0.001    0.169    0.145
+
+Covariances:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+  Metacog ~~                                                            
+    WoMem             0.233    0.052    4.520    0.000    0.233    0.233
+
+Variances:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+    Metacog           1.000                               1.000    1.000
+    WoMem             1.000                               1.000    1.000
+   .Strategy          1.005    0.069   14.506    0.000    1.005    0.515
+   .Task              0.964    0.051   19.077    0.000    0.964    0.754
+   .Character         1.093    0.118    9.274    0.000    1.093    0.331
+   .GlobalMovement    1.522    0.078   19.439    0.000    1.522    0.776
+   .Knowledge         1.481    0.084   17.731    0.000    1.481    0.714
+   .TaskSwitch        1.129    0.146    7.719    0.000    1.129    0.575
+   .StroopTask        0.999    0.052   19.289    0.000    0.999    0.900
+   .UpdatingTask      0.975    0.122    7.988    0.000    0.975    0.599
+   .TimeSpent         1.342    0.073   18.484    0.000    1.342    0.979
+
+Modification Indices:
+
+              lhs op            rhs      mi    epc sepc.lv sepc.all sepc.nox
+22        Metacog =~     TaskSwitch   2.102 -0.100  -0.100   -0.071   -0.071
+23        Metacog =~     StroopTask   1.293  0.049   0.049    0.047    0.047
+24        Metacog =~   UpdatingTask   5.699 -0.147  -0.147   -0.115   -0.115
+25        Metacog =~      TimeSpent 143.185  0.580   0.580    0.495    0.495
+26          WoMem =~       Strategy   0.275 -0.029  -0.029   -0.021   -0.021
+27          WoMem =~           Task   0.192  0.021   0.021    0.019    0.019
+28          WoMem =~      Character   2.797  0.120   0.120    0.066    0.066
+29          WoMem =~ GlobalMovement   0.738 -0.052  -0.052   -0.037   -0.037
+30          WoMem =~      Knowledge   2.793 -0.102  -0.102   -0.071   -0.071
+31       Strategy ~~           Task   4.583  0.099   0.099    0.101    0.101
+32       Strategy ~~      Character  14.956  0.429   0.429    0.409    0.409
+33       Strategy ~~ GlobalMovement  19.141 -0.250  -0.250   -0.202   -0.202
+34       Strategy ~~      Knowledge   3.696 -0.116  -0.116   -0.095   -0.095
+35       Strategy ~~     TaskSwitch   0.518 -0.036  -0.036   -0.034   -0.034
+36       Strategy ~~     StroopTask   1.894  0.055   0.055    0.055    0.055
+37       Strategy ~~   UpdatingTask   0.396 -0.029  -0.029   -0.029   -0.029
+38       Strategy ~~      TimeSpent   0.539  0.034   0.034    0.029    0.029
+39           Task ~~      Character   0.282 -0.035  -0.035   -0.034   -0.034
+40           Task ~~ GlobalMovement   0.473 -0.033  -0.033   -0.027   -0.027
+41           Task ~~      Knowledge   2.519 -0.076  -0.076   -0.064   -0.064
+42           Task ~~     TaskSwitch   0.070 -0.012  -0.012   -0.012   -0.012
+43           Task ~~     StroopTask   2.786  0.061   0.061    0.062    0.062
+44           Task ~~   UpdatingTask   0.034 -0.008  -0.008   -0.008   -0.008
+45           Task ~~      TimeSpent   0.663  0.034   0.034    0.030    0.030
+46      Character ~~ GlobalMovement   2.453 -0.125  -0.125   -0.097   -0.097
+47      Character ~~      Knowledge   6.278 -0.218  -0.218   -0.171   -0.171
+48      Character ~~     TaskSwitch   0.733  0.054   0.054    0.048    0.048
+49      Character ~~     StroopTask   0.066 -0.013  -0.013   -0.012   -0.012
+50      Character ~~   UpdatingTask   0.367  0.035   0.035    0.033    0.033
+51      Character ~~      TimeSpent   3.167  0.099   0.099    0.082    0.082
+52 GlobalMovement ~~      Knowledge  79.928  0.533   0.533    0.355    0.355
+53 GlobalMovement ~~     TaskSwitch   1.730 -0.075  -0.075   -0.057   -0.057
+54 GlobalMovement ~~     StroopTask   0.670 -0.038  -0.038   -0.030   -0.030
+55 GlobalMovement ~~   UpdatingTask   0.958 -0.051  -0.051   -0.042   -0.042
+56 GlobalMovement ~~      TimeSpent  71.959  0.443   0.443    0.310    0.310
+57      Knowledge ~~     TaskSwitch   0.527 -0.041  -0.041   -0.032   -0.032
+58      Knowledge ~~     StroopTask   0.463 -0.031  -0.031   -0.026   -0.026
+59      Knowledge ~~   UpdatingTask   3.655 -0.099  -0.099   -0.082   -0.082
+60      Knowledge ~~      TimeSpent  29.172  0.282   0.282    0.200    0.200
+61     TaskSwitch ~~     StroopTask   1.854 -0.115  -0.115   -0.108   -0.108
+62     TaskSwitch ~~   UpdatingTask  23.448  1.496   1.496    1.426    1.426
+63     TaskSwitch ~~      TimeSpent   0.644 -0.051  -0.051   -0.041   -0.041
+64     StroopTask ~~   UpdatingTask   1.007  0.075   0.075    0.076    0.076
+65     StroopTask ~~      TimeSpent   0.438 -0.028  -0.028   -0.024   -0.024
+66   UpdatingTask ~~      TimeSpent   9.563 -0.175  -0.175   -0.153   -0.153
+$FIT
+                         npar                          fmin 
+                       19.000                         0.201 
+                        chisq                            df 
+                      321.632                        26.000 
+                       pvalue                  chisq.scaled 
+                        0.000                       321.962 
+                    df.scaled                 pvalue.scaled 
+                       26.000                         0.000 
+         chisq.scaling.factor                baseline.chisq 
+                        0.999                      1380.702 
+                  baseline.df               baseline.pvalue 
+                       36.000                         0.000 
+        baseline.chisq.scaled            baseline.df.scaled 
+                     1299.562                        36.000 
+       baseline.pvalue.scaled baseline.chisq.scaling.factor 
+                        0.000                         1.062 
+                          cfi                           tli 
+                        0.780                         0.696 
+                   cfi.scaled                    tli.scaled 
+                        0.766                         0.676 
+                   cfi.robust                    tli.robust 
+                        0.780                         0.695 
+                         logl             unrestricted.logl 
+                   -11724.766                    -11563.950 
+                          aic                           bic 
+                    23487.531                     23576.539 
+                       ntotal                          bic2 
+                      800.000                     23516.203 
+                        rmsea                rmsea.ci.lower 
+                        0.119                         0.108 
+               rmsea.ci.upper                  rmsea.pvalue 
+                        0.131                         0.000 
+                 rmsea.scaled         rmsea.ci.lower.scaled 
+                        0.119                         0.108 
+        rmsea.ci.upper.scaled           rmsea.pvalue.scaled 
+                        0.131                         0.000 
+                 rmsea.robust         rmsea.ci.lower.robust 
+                        0.119                         0.108 
+        rmsea.ci.upper.robust           rmsea.pvalue.robust 
+                        0.131                            NA 
+                         srmr 
+                        0.114 
+
+$PE
+              lhs op            rhs exo       est         se         z       pvalue
+1         Metacog =~       Strategy   0 0.9738189 0.04819641 20.205217 0.000000e+00
+2         Metacog =~           Task   0 0.5609171 0.04240732 13.226893 0.000000e+00
+3         Metacog =~      Character   0 1.4865260 0.06547015 22.705399 0.000000e+00
+4         Metacog =~ GlobalMovement   0 0.6625400 0.05209005 12.719126 0.000000e+00
+5         Metacog =~      Knowledge   0 0.7696445 0.05278677 14.580253 0.000000e+00
+6           WoMem =~     TaskSwitch   0 0.9142000 0.08621971 10.603144 0.000000e+00
+7           WoMem =~     StroopTask   0 0.3330607 0.04594241  7.249525 4.183320e-13
+8           WoMem =~   UpdatingTask   0 0.8079897 0.07702258 10.490295 0.000000e+00
+9           WoMem =~      TimeSpent   0 0.1694029 0.05303336  3.194272 1.401841e-03
+10        Metacog ~~        Metacog   0 1.0000000 0.00000000        NA           NA
+11          WoMem ~~          WoMem   0 1.0000000 0.00000000        NA           NA
+12       Strategy ~~       Strategy   0 1.0050389 0.06928529 14.505805 0.000000e+00
+13           Task ~~           Task   0 0.9639290 0.05052897 19.076760 0.000000e+00
+14      Character ~~      Character   0 1.0934456 0.11790408  9.274027 0.000000e+00
+15 GlobalMovement ~~ GlobalMovement   0 1.5222681 0.07831059 19.438853 0.000000e+00
+16      Knowledge ~~      Knowledge   0 1.4808903 0.08352142 17.730666 0.000000e+00
+17     TaskSwitch ~~     TaskSwitch   0 1.1286204 0.14620403  7.719489 1.176836e-14
+18     StroopTask ~~     StroopTask   0 0.9992297 0.05180193 19.289431 0.000000e+00
+19   UpdatingTask ~~   UpdatingTask   0 0.9745939 0.12201137  7.987731 1.332268e-15
+20      TimeSpent ~~      TimeSpent   0 1.3419898 0.07260268 18.484025 0.000000e+00
+21        Metacog ~~          WoMem   0 0.2327712 0.05150354  4.519519 6.198041e-06
+      std.lv   std.all   std.nox
+1  0.9738189 0.6967658 0.6967658
+2  0.5609171 0.4960651 0.4960651
+3  1.4865260 0.8179085 0.8179085
+4  0.6625400 0.4730947 0.4730947
+5  0.7696445 0.5345214 0.5345214
+6  0.9142000 0.6522713 0.6522713
+7  0.3330607 0.3161045 0.3161045
+8  0.8079897 0.6333637 0.6333637
+9  0.1694029 0.1446944 0.1446944
+10 1.0000000 1.0000000 1.0000000
+11 1.0000000 1.0000000 1.0000000
+12 1.0050389 0.5145175 0.5145175
+13 0.9639290 0.7539195 0.7539195
+14 1.0934456 0.3310256 0.3310256
+15 1.5222681 0.7761814 0.7761814
+16 1.4808903 0.7142869 0.7142869
+17 1.1286204 0.5745422 0.5745422
+18 0.9992297 0.9000779 0.9000779
+19 0.9745939 0.5988505 0.5988505
+20 1.3419898 0.9790635 0.9790635
+21 0.2327712 0.2327712 0.2327712
+
+$MI
+              lhs op            rhs      mi    epc sepc.lv sepc.all sepc.nox
+22        Metacog =~     TaskSwitch   2.102 -0.100  -0.100   -0.071   -0.071
+23        Metacog =~     StroopTask   1.293  0.049   0.049    0.047    0.047
+24        Metacog =~   UpdatingTask   5.699 -0.147  -0.147   -0.115   -0.115
+25        Metacog =~      TimeSpent 143.185  0.580   0.580    0.495    0.495
+26          WoMem =~       Strategy   0.275 -0.029  -0.029   -0.021   -0.021
+27          WoMem =~           Task   0.192  0.021   0.021    0.019    0.019
+28          WoMem =~      Character   2.797  0.120   0.120    0.066    0.066
+29          WoMem =~ GlobalMovement   0.738 -0.052  -0.052   -0.037   -0.037
+30          WoMem =~      Knowledge   2.793 -0.102  -0.102   -0.071   -0.071
+31       Strategy ~~           Task   4.583  0.099   0.099    0.101    0.101
+32       Strategy ~~      Character  14.956  0.429   0.429    0.409    0.409
+33       Strategy ~~ GlobalMovement  19.141 -0.250  -0.250   -0.202   -0.202
+34       Strategy ~~      Knowledge   3.696 -0.116  -0.116   -0.095   -0.095
+35       Strategy ~~     TaskSwitch   0.518 -0.036  -0.036   -0.034   -0.034
+36       Strategy ~~     StroopTask   1.894  0.055   0.055    0.055    0.055
+37       Strategy ~~   UpdatingTask   0.396 -0.029  -0.029   -0.029   -0.029
+38       Strategy ~~      TimeSpent   0.539  0.034   0.034    0.029    0.029
+39           Task ~~      Character   0.282 -0.035  -0.035   -0.034   -0.034
+40           Task ~~ GlobalMovement   0.473 -0.033  -0.033   -0.027   -0.027
+41           Task ~~      Knowledge   2.519 -0.076  -0.076   -0.064   -0.064
+42           Task ~~     TaskSwitch   0.070 -0.012  -0.012   -0.012   -0.012
+43           Task ~~     StroopTask   2.786  0.061   0.061    0.062    0.062
+44           Task ~~   UpdatingTask   0.034 -0.008  -0.008   -0.008   -0.008
+45           Task ~~      TimeSpent   0.663  0.034   0.034    0.030    0.030
+46      Character ~~ GlobalMovement   2.453 -0.125  -0.125   -0.097   -0.097
+47      Character ~~      Knowledge   6.278 -0.218  -0.218   -0.171   -0.171
+48      Character ~~     TaskSwitch   0.733  0.054   0.054    0.048    0.048
+49      Character ~~     StroopTask   0.066 -0.013  -0.013   -0.012   -0.012
+50      Character ~~   UpdatingTask   0.367  0.035   0.035    0.033    0.033
+51      Character ~~      TimeSpent   3.167  0.099   0.099    0.082    0.082
+52 GlobalMovement ~~      Knowledge  79.928  0.533   0.533    0.355    0.355
+53 GlobalMovement ~~     TaskSwitch   1.730 -0.075  -0.075   -0.057   -0.057
+54 GlobalMovement ~~     StroopTask   0.670 -0.038  -0.038   -0.030   -0.030
+55 GlobalMovement ~~   UpdatingTask   0.958 -0.051  -0.051   -0.042   -0.042
+56 GlobalMovement ~~      TimeSpent  71.959  0.443   0.443    0.310    0.310
+57      Knowledge ~~     TaskSwitch   0.527 -0.041  -0.041   -0.032   -0.032
+58      Knowledge ~~     StroopTask   0.463 -0.031  -0.031   -0.026   -0.026
+59      Knowledge ~~   UpdatingTask   3.655 -0.099  -0.099   -0.082   -0.082
+60      Knowledge ~~      TimeSpent  29.172  0.282   0.282    0.200    0.200
+61     TaskSwitch ~~     StroopTask   1.854 -0.115  -0.115   -0.108   -0.108
+62     TaskSwitch ~~   UpdatingTask  23.448  1.496   1.496    1.426    1.426
+63     TaskSwitch ~~      TimeSpent   0.644 -0.051  -0.051   -0.041   -0.041
+64     StroopTask ~~   UpdatingTask   1.007  0.075   0.075    0.076    0.076
+65     StroopTask ~~      TimeSpent   0.438 -0.028  -0.028   -0.024   -0.024
+66   UpdatingTask ~~      TimeSpent   9.563 -0.175  -0.175   -0.153   -0.153
+

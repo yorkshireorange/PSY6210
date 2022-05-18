@@ -1,0 +1,105 @@
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [lmerModLmerTest]
+Formula: RT ~ 1 + (1 | Participant_ID)
+   Data: SceneDec
+
+REML criterion at convergence: 45783.4
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.7599 -0.6740  0.0058  0.6750  3.1279 
+
+Random effects:
+ Groups         Name        Variance Std.Dev.
+ Participant_ID (Intercept) 19953    141.3   
+ Residual                   26166    161.8   
+Number of obs: 3500, groups:  Participant_ID, 70
+
+Fixed effects:
+            Estimate Std. Error    df t value Pr(>|t|)    
+(Intercept)    947.0       17.1  69.0   55.37   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [lmerModLmerTest]
+Formula: RT ~ SceneType + (1 | Participant_ID)
+   Data: SceneDec
+
+REML criterion at convergence: 45685.5
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.6470 -0.6811  0.0072  0.6640  3.1015 
+
+Random effects:
+ Groups         Name        Variance Std.Dev.
+ Participant_ID (Intercept) 19966    141.3   
+ Residual                   25475    159.6   
+Number of obs: 3500, groups:  Participant_ID, 70
+
+Fixed effects:
+                       Estimate Std. Error       df t value Pr(>|t|)    
+(Intercept)             920.901     17.315   72.476  53.187   <2e-16 ***
+SceneTypeNon-expertise   52.295      5.396 3429.000   9.692   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr)
+ScnTypNn-xp -0.156
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [lmerModLmerTest]
+Formula: RT ~ SceneType + Age + (1 | Participant_ID)
+   Data: SceneDec
+
+REML criterion at convergence: 45489.8
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.5007 -0.6608  0.0105  0.6790  3.1444 
+
+Random effects:
+ Groups         Name        Variance Std.Dev.
+ Participant_ID (Intercept) 20290    142.4   
+ Residual                   24069    155.1   
+Number of obs: 3500, groups:  Participant_ID, 70
+
+Fixed effects:
+                       Estimate Std. Error       df t value Pr(>|t|)    
+(Intercept)             736.075     21.775  174.831  33.804   <2e-16 ***
+SceneTypeNon-expertise   51.802      5.245 3427.998   9.877   <2e-16 ***
+Age                       9.284      0.656 3430.585  14.153   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) ScnTN-
+ScnTypNn-xp -0.116       
+Age         -0.600 -0.007
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [lmerModLmerTest]
+Formula: RT ~ SceneType + Age + Consc + (1 | Participant_ID)
+   Data: SceneDec
+
+REML criterion at convergence: 45409.5
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.4891 -0.6680  0.0153  0.6763  3.1312 
+
+Random effects:
+ Groups         Name        Variance Std.Dev.
+ Participant_ID (Intercept)  6331     79.57  
+ Residual                   24069    155.14  
+Number of obs: 3500, groups:  Participant_ID, 70
+
+Fixed effects:
+                        Estimate Std. Error        df t value Pr(>|t|)    
+(Intercept)             360.9253    35.6147   93.0676  10.134   <2e-16 ***
+SceneTypeNon-expertise   51.8011     5.2449 3428.0024   9.876   <2e-16 ***
+Age                       9.3043     0.6557 3435.2156  14.189   <2e-16 ***
+Consc                    16.2223     1.3596   68.0108  11.932   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) ScnTN- Age   
+ScnTypNn-xp -0.071              
+Age         -0.374 -0.007       
+Consc       -0.885  0.000  0.009

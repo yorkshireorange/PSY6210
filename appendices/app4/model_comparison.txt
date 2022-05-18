@@ -1,0 +1,13 @@
+Data: SceneDec
+Models:
+ra1: RT ~ 1 + (1 | Participant_ID)
+ra2: RT ~ SceneType + (1 | Participant_ID)
+ra3: RT ~ SceneType + Age + (1 | Participant_ID)
+ra4: RT ~ SceneType + Age + Consc + (1 | Participant_ID)
+    npar   AIC   BIC logLik deviance   Chisq Df Pr(>Chisq)    
+ra1    3 45797 45815 -22896    45791                          
+ra2    4 45706 45731 -22849    45698  92.696  1  < 2.2e-16 ***
+ra3    5 45514 45544 -22752    45504 194.725  1  < 2.2e-16 ***
+ra4    6 45436 45473 -22712    45424  79.058  1  < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
